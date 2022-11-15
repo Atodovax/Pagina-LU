@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* estilos de header index */
+
+.headerPrincipal {
+    background-color: black;
+    height: 60vh;
+}
+
+.contenedorLogo {
+    display: flex;
+    justify-content: center;
+
+}
+.logoPrincipal {
+    height: 40vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* estilos de main index */
+
+.menuPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    list-style: none;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+main nav ul li a {
+    text-decoration: none;
+}
+
+/* estilos de footer index */
+
+.contenedorFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 50;
+    gap: 1rem;
+}
+
+.footerUno {
+    width: 45px;
+    height: 45px;
+}
+
+.footerDos {
+    width: 50px;
+    height: 50px;
+}
+
+.footerTres {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* animaciones de los botones del menu index */
+
+main nav ul li {
+    transition: 300ms;
+}
+
+main nav ul li:hover {
+    font-size: 102%;
+    transition: 300ms;
+}
+
+main nav ul li a:link {
+    color: inherit;
+}
+
+main nav ul li a:visited {
+    color: inherit;
+}
+
+main nav ul li a:active {
+    color: inherit;
+}
+
+/* Estilos de header Artes Visuales */
+
+.tituloArtes {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+/* Estilos de main Artes Visuales */
+
+.fondoRedondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.fotoUno {
+    width: 30%;
+}
+
+.flechaAnterior {
+    width: 30px;
+}
+
+.flechaSiguiente {
+    width: 30px;
+}
+
+.secretArt {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-right: 29vw;
+   margin-top: 2rem;
+}
+
+.secretArtchico {
+    font-size: medium;
+}
+
+.secretArtgrande {
+    font-size: large;
+}
+
+/* Estilos de Footer Artes Visuales */
+
+.footerArtes {
+    display: flex;
+    justify-content: center;
+    gap: 30vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 50;
+}
+
+.backArtes {
+    width: 35px;
+    height: 35px;
+}
+
+.contactoArtes {
+    width: 35px;
+    height: 35px;
+}
+
+/* Estilos de Grid de Artes Visuales */
+
+.contenedorFotografia {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "mainanterior main mainsiguiente"
+        "section section section"
+        "footer footer footer";
+}
+
+.tituloFoto {
+    grid-area: header;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fotoFoto {
+    grid-area: main;
+    
+}
+
+.flechaanterior {
+    grid-area: mainanterior;
+}
+
+.flechaSiguiente {
+    grid-area: mainsiguiente;
+}
+
+.nombreFoto {
+    grid-area: section;
+    text-align: center;
+    
+}
+
+.footerFoto {
+    grid-area: footer;
+    text-align: center;
+}
+
+.fotoFoto {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
